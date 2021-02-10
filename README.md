@@ -1,5 +1,9 @@
 # react-app-with-lib
 
+This repo is supposed to be a demonstration of the creation of a React Lib using the monorepo strategy.
+
+The steps below were followed to build the example and you can find the commits following those steps.
+
 ### CREATE THE MONOREPO AND THE LIB
 
 1 - npx lerna init
