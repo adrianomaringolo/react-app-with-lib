@@ -4,6 +4,16 @@ This repo is supposed to be a demonstration of the creation of a React Lib using
 
 The steps below were followed to build the example and you can find the commits following those steps.
 
+To run this repo:
+- `npm install`
+- `npx lerna bootstrap`
+- `npx lerna build` - to build the lib
+- `yarn start-app` - go to http://localhost:3000
+
+To run storybook:
+- `yarn storybook` - go to http://localhost:6006
+
+## To create the structure yourself, do the following:
 ### CREATE THE MONOREPO AND THE LIB
 
 1 - npx lerna init
