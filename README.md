@@ -30,3 +30,6 @@ The lib is ready to use. You can publish it to npm (lerna helps that) or use it 
 - `cd packages/components-lib`
 - `npx sb init` (`-f` if needed)
     - obs: `stories` folder (remove if you want) - this is just some example stories
+
+11 - create story for the component
+- change `.storybook/main.js` file to change the place to look for .stories files
