@@ -46,3 +46,6 @@ The lib is ready to use. You can publish it to npm (lerna helps that) or use it 
 - `cd packages/<app-name>` - you can create a script to run that in the package.json folder
 - `yarn start`
     - the command above might have some error because Yarn Workspaces, in that case, run `echo "SKIP_PREFLIGHT_CHECK=true" > .env` - it will ignore the error
+
+14 - add the link between the lib and the app
+- run `lerna bootstrap`
