@@ -9,3 +9,5 @@
 5 - add react
 - `yarn add --dev -W react react-dom styled-components`
 
+6 - create new package
+- `npx lerna create <package_name>`
