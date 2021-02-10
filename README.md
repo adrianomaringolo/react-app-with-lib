@@ -35,3 +35,14 @@ The lib is ready to use. You can publish it to npm (lerna helps that) or use it 
 
 12 - run `yarn storybook` and go to `http://localhost:6006`
  - tip: change the component code and see the storybook refreshing as you go
+
+ ----
+
+### INCLUDE REACT APP (CRA)
+
+(needed to remove "webpack" and add "@storybook/addon-docs" to root to make create-react-app work)
+
+13 - `create-react-app packages/<app-name>`
+- `cd packages/<app-name>` - you can create a script to run that in the package.json folder
+- `yarn start`
+    - the command above might have some error because Yarn Workspaces, in that case, run `echo "SKIP_PREFLIGHT_CHECK=true" > .env` - it will ignore the error

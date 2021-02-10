@@ -4,7 +4,8 @@
   "scripts": {
     "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.stories.js,**/*.spec.js",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "start-app": "cd packages/cra-app && yarn start"
   },
   "devDependencies": {
     "@babel/cli": "7.12.13",
@@ -12,17 +13,18 @@
     "@babel/preset-env": "7.12.13",
     "@babel/preset-react": "7.12.13",
     "@storybook/addon-actions": "^6.1.17",
+    "@storybook/addon-docs": "6.1.17",
     "@storybook/addon-essentials": "^6.1.17",
     "@storybook/addon-links": "^6.1.17",
-    "@storybook/react": "^6.1.17",
+    "@storybook/react": "6.1.17",
     "babel-core": "7.0.0-bridge.0",
     "babel-loader": "8.2.2",
     "babel-plugin-styled-components": "1.12.0",
+    "create-react-app": "4.0.2",
     "lerna": "^3.22.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "styled-components": "5.2.1",
-    "webpack": "5.21.2"
+    "styled-components": "5.2.1"
   },
   "workspaces": [
     "packages/*"
