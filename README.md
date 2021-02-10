@@ -47,5 +47,18 @@ The lib is ready to use. You can publish it to npm (lerna helps that) or use it 
 - `yarn start`
     - the command above might have some error because Yarn Workspaces, in that case, run `echo "SKIP_PREFLIGHT_CHECK=true" > .env` - it will ignore the error
 
-14 - add the link between the lib and the app
+14 - add the link between the lib and the app (change package.json for the app)
 - run `lerna bootstrap`
+- obs: we have to make sure the name of the lib is unique. A tip is to use something like `@my-project-name/lib-name` in the package.json file of the lib
+
+15 - import the component you created into the app and use it
+
+**THAT'S IT!**
+WE HAVE OUR [MONOREPO](https://www.toptal.com/front-end/guide-to-monorepos) managed with [LERNA](https://github.com/lerna/lerna), using [YARN WORKSPACES](https://classic.yarnpkg.com/en/docs/workspaces/) to organize the npm packages, with [STORYBOOK](https://storybook.js.org/docs/react/get-started/introduction) for documentation.
+
+---
+
+
+### What's missing
+- [ ] Include tests for the components
+- [ ] ....
