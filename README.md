@@ -1,5 +1,7 @@
 # react-app-with-lib
 
+### CREATE THE MONOREPO AND THE LIB
+
 1 - npx lerna init
 2 - edit `lerna.json` to use yarn workspaces
 3 - add babel dependencies with yarn
@@ -16,3 +18,15 @@
 8 - create a example component
 9 - build the lib
 - `yarn build` - it will generate a `lib` folder inside the package
+
+The lib is ready to use. You can publish it to npm (lerna helps that) or use it locally (that's what we're doing soon)
+
+----
+
+### INCLUDE STORYBOOK
+
+10 - add and init storybook
+- `yarn add --dev -W @storybook/react`
+- `cd packages/components-lib`
+- `npx sb init` (`-f` if needed)
+    - obs: `stories` folder (remove if you want) - this is just some example stories
