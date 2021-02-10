@@ -27,9 +27,11 @@ The lib is ready to use. You can publish it to npm (lerna helps that) or use it 
 
 10 - add and init storybook
 - `yarn add --dev -W @storybook/react`
-- `cd packages/components-lib`
 - `npx sb init` (`-f` if needed)
     - obs: `stories` folder (remove if you want) - this is just some example stories
 
 11 - create story for the component
 - change `.storybook/main.js` file to change the place to look for .stories files
+
+12 - run `yarn storybook` and go to `http://localhost:6006`
+ - tip: change the component code and see the storybook refreshing as you go
