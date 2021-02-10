@@ -12,4 +12,7 @@
 6 - create new package
 - `npx lerna create <package_name>`
 
-7 - add build script in root package.json:
+7 - add build script in root package.json
+8 - create a example component
+9 - build the lib
+- `yarn build` - it will generate a `lib` folder inside the package
