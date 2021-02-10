@@ -1,3 +1,4 @@
 # react-app-with-lib
 
-- npx lerna init
+1 - npx lerna init
+2 - edit lerna.json to use yarn workspaces
