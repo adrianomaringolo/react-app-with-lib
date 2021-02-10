@@ -11,3 +11,5 @@
 
 6 - create new package
 - `npx lerna create <package_name>`
+
+7 - add build script in root package.json:
