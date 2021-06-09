@@ -16,6 +16,8 @@ To run storybook:
 ## To create the structure yourself, do the following:
 ### CREATE THE MONOREPO AND THE LIB
 
+Node must be installed
+
 1 - npx lerna init
 
 2 - edit `lerna.json` to use yarn workspaces
