@@ -69,7 +69,8 @@ The lib is ready to use. You can publish it to npm (lerna helps that) or use it 
     - the command above might have some error because Yarn Workspaces, in that case, run `echo "SKIP_PREFLIGHT_CHECK=true" > .env` - it will ignore the error
 
 14 - add the link between the lib and the app (change package.json for the app)
-- run `lerna bootstrap`
+- add dependency: `"@react-app-with-lib/components-lib": "*"` to package.json
+- run `lerna bootstrap` (it will create the symlinks)
 - obs: we have to make sure the name of the lib is unique. A tip is to use something like `@my-project-name/lib-name` in the package.json file of the lib
 
 15 - import the component you created into the app and use it
